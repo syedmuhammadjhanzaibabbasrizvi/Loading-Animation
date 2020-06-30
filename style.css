@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(to right, #6699ff 0%, #000066 95%);
+  border: 100px solid #23448a 0%, #000066 95%;
+  display: flex;
+  justify-content: center;
+}
+.loader {
+  margin: 420px;
+  width: 600px;
+  height: 50px;
+  background-color: rgba(252, 185, 185, 0.822);
+  border-radius: 40px;
+  border: 2px solid whitesmoke;
+  animation-name: loadi;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+}
+h1 {
+  color: rgba(0, 0, 0, 0.973);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-shadow: 2px 2px rgb(2, 133, 255);
+  position: absolute;
+  animation-name: load;
+  animation-duration: 10s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+  padding: 12px 81px 11px 0px;
+  margin-left: 10px;
+  border-radius: 40px;
+  opacity: 0.1;
+}
+@keyframes loadi {
+  from {
+    background-color: rgb(88, 174, 224);
+  }
+  to {
+    background-color: rgb(49, 69, 179);
+  }
+}
+@keyframes load {
+  0% {
+    left: 35%;
+    opacity: 0.1;
+  }
+  20% {
+    left: 38%;
+    opacity: 0.3;
+  }
+  30% {
+    left: 45%;
+    opacity: 0.4;
+  }
+  40% {
+    left: 50%;
+    opacity: 0.5;
+  }
+  50% {
+    left: 55%;
+    opacity: 0.7;
+  }
+  60% {
+    left: 60%;
+    opacity: 1;
+  }
+}
